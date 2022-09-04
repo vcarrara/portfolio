@@ -2,7 +2,7 @@
 
 # Portfolio of Victor Carrara
 
-![CD Status](https://github.com/vcarrara/portfolio3/actions/workflows/push.yml/badge.svg)
+![CD Status](https://github.com/vcarrara/portfolio/actions/workflows/pages.yml/badge.svg)
 
 My portfolio is a **Gatsby** <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-plain.svg" width="16" />
 site generated from Markdown, created and designed with ❤️, React <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="16" />
@@ -42,14 +42,14 @@ This portfolio is actually deployed as a static site on **Github Pages**. A cont
 
 ## Roadmap
 
-- [x] Continuous Deployment (CD) 🚀 pipeline
-- [x] Mutli-level timeline for projects
-- [x] Responsiveness & Mobile display
-- [x] Custom `404 Not Found` page
-- [x] Typescript and GraphQL Typegen
-- [ ] Storybook <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg" width="16" /> for components
-- [ ] Switchable theme
-- [ ] Multilingual capacities (`en` & `fr`)
-- [ ] `<head>` tags management with `react-helmet` for SEO
-- [ ] Search analytics reporting
-- [ ] E2E Testing with Cypress
+-   [x] Continuous Deployment (CD) 🚀 pipeline
+-   [x] Mutli-level timeline for projects
+-   [x] Responsiveness & Mobile display
+-   [x] Custom `404 Not Found` page
+-   [x] Typescript and GraphQL <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" width="16" /> Typegen
+-   [ ] Storybook <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg" width="16" /> for components
+-   [ ] Switchable theme
+-   [ ] Multilingual capacities (`en` & `fr`)
+-   [ ] `<head>` tags management with `react-helmet` for SEO
+-   [ ] Search analytics reporting
+-   [ ] E2E Testing with Cypress
