@@ -1,49 +1,39 @@
-import * as React from "react"
-import { Link, HeadFC } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
+import MainLayout from '../components/layouts/MainLayout'
+import Container from '../components/core/Container'
+import Button from '../components/core/Button'
 
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-
-const NotFoundPage = () => {
-  return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
+function NotFoundPage() {
+    return (
+        <MainLayout>
+            <div className="flex items-center justify-center">
+                <Container>
+                    <div className="min-h-full px-4 py-16 sm:px-6 sm:py-24 md:grid md:place-items-center lg:px-8">
+                        <div className="max-w-max mx-auto">
+                            <main className="sm:flex">
+                                <p className="text-4xl font-extrabold text-primary-500 sm:text-5xl">404</p>
+                                <div className="sm:ml-6">
+                                    <div className="sm:border-l sm:border-gray-400 sm:pl-6">
+                                        <h1 className="text-4xl font-extrabold text-white tracking-tight sm:text-5xl">Oops, I don't know that page</h1>
+                                        <p className="mt-1 text-base text-gray-500">🧐 Please check the URL in the address bar and try again.</p>
+                                    </div>
+                                    <div className="mt-10 flex space-x-3 sm:border-l sm:border-transparent sm:pl-6">
+                                        <Button as={Link} to="/">
+                                            Go back home
+                                        </Button>
+                                        <Button type="transparent" as="a" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/victor-carrara/">
+                                            Contact me
+                                        </Button>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                </Container>
+            </div>
+        </MainLayout>
+    )
 }
 
 export default NotFoundPage
-
-export const Head: HeadFC = () => <title>Not found</title>

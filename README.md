@@ -1,54 +1,55 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal TypeScript starter
-</h1>
+<div align="center">
 
-## 🚀 Quick start
+# Portfolio of Victor Carrara
 
-1.  **Create a Gatsby site.**
+![CD Status](https://github.com/vcarrara/portfolio3/actions/workflows/push.yml/badge.svg)
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+My portfolio is a **Gatsby** <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-plain.svg" width="16" />
+site generated from Markdown, created and designed with ❤️, React <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="16" />
+, GraphQL <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" width="16" />
+and Tailwind CSS <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="16" />
+.
+
+[Getting started](#getting-started) •
+[🚀 Deployment](#deployment) •
+[Roadmap](#roadmap)
+
+</div>
+
+## Getting started
+
+1.  **Project setup.**
+
+    Navigate into this site’s directory and install dependencies
 
     ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby
+    npm i
     ```
 
 2.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+    Start the development server
 
     ```shell
-    cd my-gatsby-site/
     npm run develop
     ```
 
-3.  **Open the code and start customizing!**
+    The site should be running at http://localhost:8000!
 
-    Your site is now running at http://localhost:8000!
+## Deployment
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+This portfolio is actually deployed as a static site on **Github Pages**. A continuous deployment pipeline (CD 🚀) is triggered on `push` by a Github action. This action bundles the sources as ready-to-serve built assets and then deploys generated files.
 
-4.  **Learn more**
+## Roadmap
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+- [x] Continuous Deployment (CD) 🚀 pipeline
+- [x] Mutli-level timeline for projects
+- [x] Responsiveness & Mobile display
+- [x] Custom `404 Not Found` page
+- [x] Typescript and GraphQL Typegen
+- [ ] Storybook <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg" width="16" /> for components
+- [ ] Switchable theme
+- [ ] Multilingual capacities (`en` & `fr`)
+- [ ] `<head>` tags management with `react-helmet` for SEO
+- [ ] Search analytics reporting
+- [ ] E2E Testing with Cypress

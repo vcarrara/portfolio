@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply min-h-screen bg-gray-900 text-white selection:bg-primary-300 selection:text-primary-900;
+}
